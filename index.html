@@ -1,14 +1,40 @@
 <!DOCTYPE html>
-<html lang="eng">
-    <head>
-<title>
-    Hello World!
-</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anton Mykhaylov</title>
+    <!-- Linking CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/png;base64,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" type="image/x-icon"/>    
 </head>
-
 <body>
-    <h1>
-        Hello World! Test test test
-    </h1>
+    <header>
+        <h1 id="name">Anton Mykhaylov</h1>
+            <nav>
+                <a href="#about">About</a> |
+                <a href="#portfolio">Portfolio</a> |
+                <a href="#contact">Contact</a> |
+             </nav>
+    </header>
+
+    <!-- About Me section -->
+    <div class="container">
+        <section id="about-me">
+            <h1>About Me</h1>
+            
+            <img src="#" alt="Image of Anton" id="bio-image">
+
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."                    
+            </p>
+        </section>
+    <!-- Connect with Me section -->
+        <section id="connect">
+            <h2 id="connect-heading">Connect with Me</h2>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAEeUlEQVR4Xu2aW4hWVRTHf2uVRVEP3UTqqTAqK7oiGtVDRURZECUWKZYFESEJdiULwiQqoiyQDCqlC70YCT4UWD6oWPQSZBcJsaAyu9pForD1j2Xni3H4ZubwnXO+T52z32Zmr73/63/WfY8xzpeNc/1pCRhiAYcCp40Di9gC/NnRc6gFTDazLw50AiSdCWxuCSgYaC1giMm3LtDGgDYItlmgTYNtHXCAM9AWQm0l2JbCbS/QeDMk6Tbge3e/TNIc4KgeYusuM3s1IlYBO81sA3BID+fsJdKPILhT0jFAFDcfASw0sweAnDn8DmwDfir68mzIDgcmAicCB5nZsxHxWLFnzzFmtha4dH8gYJOkC7oAPTmVA3IgoREUORg4Oq1n+N/d/UVJ8/YHAtZJuqQq0C4ErJA0t+q5/XCBzyRNqQp0uLyZvQNcXvXcfhDwi6TjgH+qgh0q7+6LJS2qembjBEi6DnizKtAu8hkc1wEXVTm7aQLWSLq6CsAxZKea2QdVzm+UgEL5NVUAjiVrZp8Dp4y1b6S/N03AJGBHr+DKyLn7S5JuKbO3256mCcg8Xmvw65IOH5H08LglAFhkZov3VQIy/f3YK7gycu7+hKR7yuwdhAtMB97vFVwZOXd/XdKNZfYOgoC7gad6BVdGzsw+Bs4os7fvBAAfSTp3lGanV9wduYlm9l02h70e1GgWSFCSrgeyh6991VEON05ABkFJ04CtNTNwVlEF5kyh59UPAhLcdkmzgPU9I91bcLqZZX+RhVal1SQB24EshDIV7llm9kZEPFdkhs6EqKwCDkxz99slzQby58qrMQIk3Qk8D8w3s2eGIc3yeKOZbY6Il4EvR9DkbHe/SdLpwFQgR2u1rsYIKL740ohYADxoZo92Qb5K0sxRskS2vKuBq2rVeshhjRKQ90i6Fljt7iuLifD/1xdf9tMxlKvc8o52fuMEFLXAecVXzhHWOcDuIg5sLH6fJv4JcDHwW8oA+WCRRc4EM8v/4soBau2rHwSkFdwPPD4C+knuviAics81wB/Ae+6+PCIyjuw2sx+AY2vX/j8L7c/LkJm9EhHLgRxg5Bj8SOArYIq7z42I+4Argb+Ad919RUTMz3cDM/sGOH6/JqAL+K2SJhcE3BwR9wJXFO6xtiDgLuBXM8uUWjnndyOwbxbQ5fJtkk7KRsbdZxcukNE+LaBDwMJ8DTKzTJv5UlT72lcImBURDwE5Qf4ZWFdYQLrFDjPLmULtNUCRpfoTA7p8ui2STi2ifQa/JcCtQPr72wUBOff/+kB0gV1FOfsWcEfRzi5z9yURke+AS939yYjIdPgaMM/MXmgiFQ7EBczs6YjISD9D0g2Szk/fN7MPMw1KuhA4zMw2mdnKiFjv7jPreAscbokDIWAYiA2S1ppZ5vxO45SBb5mkGUXhVHvw6xy4LxDQmHJlDm4J6FclWOZrDGJPawGtBfSpGRqEeZe5s3WB1gVaFxhYM1TGRRvfM1oMmACc0DiCwV/wLfB3B0bPj4yD16MeBOOegH8BrbKKX2PJkZkAAAAASUVORK5CYII">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADUUlEQVR4Xu2by2tTQRSHv5m0RsUXQvGFG2nF9wNdFRWE2oSgiBtXuin4WNiFbrRJhaI2sUUUH6AuFAT/A6HmFsGNuvGJT1R0JXUhBaVIbey9R6K2JWTSRzTeeDN3e08y8/vyOzNnbu5RVPilKlw/FsCwA5q7wkyvWhp4R/RPe82Z+v4hnSMOOJKuRau3gQcAK0lGnlsAvwlYBwxb3qaAXQPsImh3AbsN2jrAFkK2Egw+AVsKl+gsIG9QuhXx7vw0kdIbEEkCtWVmqpI44AMSWkOqoTdHbEtXDYpnEJpTRhBKAEBUglRj9tfOvxLOcYTWYANA7SbZeN0oMu40AVeCDUBxkvZIixnAzdOgDwYbgCufqfbWcyL2LncNcJYg3n20nhZsAD/Veb2IPgVyl5CEcNUmlBwCPbOMxGenUoJFsMwUjjEdC+DvF0Ke+xYVumokr7xm0PN/ZQkfUZwzxonbhA7VgdeD6DPgdhGe8p6e6S41vXOBevCaEN34h4YrgQNEHFLRaIE64AHCut/3npKMrDbGtaTTaPWdQb2Lji1fCopMdO/AletophYJwkcAwgtSkRXm7bL7KH2DnZyPDYwpLO5sAc8BXcw/Wz4CQL0k2bjcKLDtdhVtmwfHFD8UEHcuAfvGHT8S6CcAeUUyuqyISed/5MitRWg3t+4Y3xf7CWAUB2QnH0/Pw1MnwN2I6K9UcY32yFlQYtR2OP2YkFozPt3DUWUKoO32LDLfHoJelCNISTPt0QvmdePmZdB7gwEg3n0U5FiemOwWezK22AzAyZ4/zKfQwlTK1AEJ5wbCVuO8B7/NoHN7X969RPoAos4HwwHZOkCpiBmAu5DO2AcDgP2IumgBTIyAjykwWiFUGQ5wn5OMrSxYCgc+BYRnpCKrLAATgcpIAUY/DQY+BVx5Qkd0beWmgAXAIzoiQw9Hco3wf68B3CI8aZvR2t8H7iHql+2VPKY6XG+MG8jcQNFgvOdJHZPD+ZVgJrMHCjxi+6dngYlVYn5Hl6AS9FvSxMa3AP7+Y/GJ/QJ+R1sHWAfY1+Vtv4BtmBhaiW3DxPCeZBsmbMOEbZiwDRMV3TCx90E1sz8t8LtQL/n4k/t6aNuZyd8GSz5yeQ5QzCsm5amkyFn9AMn5jl+76hhHAAAAAElFTkSuQmCC">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAFEklEQVR4Xu2bf0wTZxjHv3cVCgUqYKEUKVIDyA8lbjPZpgYXdSFZonFuhD+c2zBbmNsy4oZZJguMhCj+odtiFmNGJi4zzKlbglm2TOLitjAyN9lUfkxkYBFsC1V+tECh3C3vtTBK61rSuyu19yRNk9571+f7eZ/3+7xtr9RXhYWy9OSOcgCvA1AjBIIBMyBjqU8672ZXU1dL11QAqAoB3e4SWVQQAIZQmfn5BBgwJgKADcnZd4qWAEgVIC0ByQMkE5S6QAgTkNqg1AalNii1QakNhnATQEC6QKQmA9qiSoCiYLp0EkN/NQZsDkQHIIuIxqp36iFPWDEr2vTjKfRf+AgsMy06CNEBqLcUI3nbPjehlq4/0HNqP6ZGBkWFIDoAUDQ0BSVIKniNWwJzg4jvqSuD5Z+rokEQH4BTmjJ7I9J210CmULqIZRkG/Q1HYLr8BcAK36ACBoCoDl+2HLrio1CkZLvN+NCfP+B2fSUYm1XQahANgGpjEYgou+W+iyA6TI6U597Dsid2ugmdMHaj++TbmDB0CQZBFABRurXILP0czOQEzM3nYbxUh6kho4soAkD7/AFQS8JdXmcmx6Gvr8T9lu8FgSAKAN2eDxGbt2VWADs9hXtXLsDY+Blsg/rZ1xXaHG5JhMcnu4kduHwafQ1HwE7beQUhOAC5KhU55Q0g7j8/iOGRZWG8+CnG73Zyh2WKpUjbfQjEJOeHtbsF3XVlmBoe4A2C4ABkkTFI3PQCEvJ3uTn+fyXBYrjtJw6EtecaByupoAQaD63SbrmH7rr9sNy6wgsEwQHMZEnLo6DaUIjEp15EmFL1wOQtnb/BcLEWozebocze4GyVS91a5Z1z1RhsOuc3BNEAzIIIkyP+8R1Qby72uNZnxllvX4exsRbjfX87WqU2Z46H2NF57GVHtfgZwgGgaITHazBp7vOYIkXLEPfYM1BvfQURat0DZRBvMHx3HDFZT0K1vpAbd+ebwyCmyEcIBoBsblaVnYHdOoSx3jaM6W84H62YGpljYhSN2LzNUD/9qscN0YxI22Av2g9uh7aoAvovP+BtlygYgIRNu5Dy7LseJ4m4OAekt5V7tupbMT02zK15AiJ65aMez2Ptk7hRVQD7qJmPyeeuIRgA3Z6jiM3b6nOiZKlYnVDI7lCZtR5Rukdczjc3f+2YfR5DMADKnHzEpK+DIjWXMzDSBRYULAOWZUG8gguWRfvhnbxvi3kBEJ2+DrJIx6c6sssbafvZVStFIyIxzQkjl3uOXJ4FMtO+xEhHE0bbf8HEgB6UbAl3Clky5DsEf4MXAJn7TiNqxRouF2J618vzveZFZjZCk8FVhyJ1tQOKJmNW4NwL6M9UwfzreeTVNIF8o0SC7ApvfvyS1/fxNiBgADwlRioiMjkTCi2pEgcU0iLbDu2AzdQTXAAy3qhFWJzG2wR4Pc7YxkC2v7eOlwQXgJz3v4VcpfUq0JcBZPbbDm6XAASVB6TvPYFwHpYAqRCbuQ9dJ/YGVwX4UtoLHRMUFcD16AnLQrX5NH6mBS7qNuiTEh4GLdp9AA/afLrEogKQWlSJiKSVPiXO16Dx/k70nq32+3K87AT9ziKAF5AASDdJSTdJSTdJCf8bdABNzttbSyYomaBkgpIJSibozSkf5uNSFwj5LvB7aa6JBp3wMJf5/2gzUC1vra5kKYrfXxyDhCYFqpzi/j6v6TjAUMybNOjEIMnd3zQNFKhja+Ou1fwL3et4bR7B94cAAAAASUVORK5CYII=">
+        </section>
 </body>
 </html>
